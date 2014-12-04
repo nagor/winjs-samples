@@ -1,0 +1,61 @@
+﻿body {
+    padding:20px;
+}
+
+.robot {
+    position: relative;
+}
+
+.robot .content{
+    width:150px;
+    height: 150px;
+    border: 2px solid gray;
+    border-radius:50%;
+    overflow:hidden;
+    text-align:center;
+}
+
+.robot .on, .robot .off{
+    width:25px;
+    height: 25px;
+    border-radius: 50%;
+    position:absolute;
+    top: 120px;
+    left:120px;
+}
+
+.robot .on{
+    background-color: green;
+}
+
+.robot .off{
+    background-color: red;
+}
+
+.robot .name {
+    margin-top:50px;
+    font-weight: bold;
+    font-size:30px;
+}
+
+.robot .typeName {
+    font-style: italic;
+    font-size:16px;
+}
+
+.robot .status{
+    border-radius: 10px;
+    width: 80px;
+    color:white;
+    background-color: #444;
+    position:absolute;
+    top: 6px;
+    left:90px;
+    font-size:14px;
+    text-align:center;
+}
+
+.robotContainer{
+    float:left;
+    margin-left:10px;
+}

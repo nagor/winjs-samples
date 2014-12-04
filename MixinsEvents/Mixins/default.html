@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Classes</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.2.0/css/ui-light.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+
+    <!-- Classes references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+
+    <!-- Robots references -->
+    <link href="/css/robots.css" rel="stylesheet" />
+    <script src="/js/robots.js"></script>
+</head>
+<body> 
+<div data-win-control="myCustomControl" 
+    data-win-options="{onmyCustomEvent : handler}">
+</div>
+    <div class="robotContainer">
+        <div id="turningRobotContainer"></div>
+        <div class="buttonGroup">
+            <button id="turningRobotTurnOnButton">Turn on</button>
+            <button id="turningRobotTurnOffButton">Turn off</button>
+            <button id="turningRobotRotateButton">Turn</button>
+        </div> 
+    </div>  
+    
+    <div class="robotContainer">
+        <div id="turningMovingRobotContainer"></div>
+        <div class="buttonGroup">
+            <button id="turningMovingRobotTurnOnButton">Turn on</button>
+            <button id="turningMovingRobotTurnOffButton">Turn off</button>
+            <button id="turningMovingRobotRotateButton">Turn</button>
+            <button id="turningMovingRobotMoveButton">Move</button>
+        </div> 
+    </div> 
+    
+    <div id="listeners">
+        <div class="listener">
+            <div class="title">Listener 1</div>
+            <div class="message" id="listener1Message"></div>
+        </div>  
+        <div class="listener">
+            <div class="title">Listener 2</div>
+            <div class="message" id="listener2Message"></div>
+        </div>      
+    </div> 
+</body>
+</html>

@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>WinRTPromises</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.2.0/css/ui-light.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+
+    <!-- WinRTPromises references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+</head>
+<body>
+    <div>
+        <div>Page responsiveness: <img src="/images/ajax-loader.gif" /></div>
+        <div>Get the <input id="inputNumber" type="text" value="69000" />th prime number</div>
+        <div>
+            <h2>C#</h2>
+            <button id="btnCSharpResult">Get synchronously</button>
+            <button id="btnCSharpResultAsync">Get async</button>
+            <button id="btnCSharpResultAsyncProgress">Get async with progress</button>            
+        </div>        
+        <div>
+            <br />
+            <button id="btnCancelPromise">Cancel promise</button>
+        </div>
+        <div>
+            <textarea id="textareaResult"></textarea>
+        </div>
+    </div>
+</body>
+</html>
