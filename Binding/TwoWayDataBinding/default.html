@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Classes</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.2.0/css/ui-light.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+
+    <!-- Classes references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+
+    <!-- Robots references -->
+    <link href="/css/robots.css" rel="stylesheet" />
+    <script src="/js/robots.js"></script>
+</head>
+<body> 
+<div data-win-control="myCustomControl" 
+    data-win-options="{onmyCustomEvent : handler}">
+</div>
+    <div class="robotContainer">
+        <div id="robotContainer">
+            <div class="robot">
+                <div class="content">
+                    <div class="name" data-win-bind="innerText: name"></div>
+                    <div class="typeName" data-win-bind="innerText: typeName"></div>
+               </div>
+               <div class="status" data-win-bind="innerText: status"></div>
+                <div data-win-bind="className: isOn Robotics.RobotClassNameConverter"></div>
+            </div>
+        </div>
+        <div class="buttonGroup">
+            <button id="robotTurnOnButton">Turn on</button>
+            <button id="robotTurnOffButton">Turn off</button>
+        </div> 
+    </div> 
+    
+    <div>
+        Robot status (using property subscription two way data binding):
+        <input type="text" id="textbox1" data-win-bind="value: status"/>
+    </div> 
+    <div>
+        Robot status (using declarative two way data binding)
+        <input type="text" id="textbox2" data-win-bind="value: status Binding.Mode.twoway"/>
+    </div>  
+</body>
+</html>
